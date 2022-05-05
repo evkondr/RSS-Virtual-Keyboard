@@ -33,13 +33,8 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            filename: "index.html",
-            template: "./src/index.html",
-        }),
-        new HtmlWebpackPlugin({
-            filename: "pages/pets.html",
-            template: "./src/pages/pets.html",
-        }),
+            filename: "index.html"
+        })
     ],
     devServer: {
         static: {
