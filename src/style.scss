@@ -7,9 +7,11 @@ $btn-text-color: #fff;
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .wrap{
-    width: 1280px;
+    width: 860px;
     margin: 0 auto;
 }
 .raw{
@@ -31,7 +33,8 @@ $btn-text-color: #fff;
     cursor: pointer;
 }
 .dark{
-    background-color: $color-dart
+    background-color: $color-dart;
+    flex-grow: 1;
 }
 .light{
     background-color: $color-light
