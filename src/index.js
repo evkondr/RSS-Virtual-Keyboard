@@ -3,12 +3,26 @@ import './style.scss';
 import variables, { keyboard } from './components/variables';
 
 const wrap = document.createElement('div');
-const button = document.createElement('div');
+
+const keyboardWrap = document.createElement('div');
+
 wrap.className = 'wrap';
-button.className = 'button';
-for(let item of keyboard.line_1) {
-    let btn = button.innerText = item.char
-    wrap.append(btn)
+
+keyboardWrap.className = 'keyboard'
+
+for(let line in keyboard){
+    const raw = document.createElement('div');
+    raw.className = 'raw';
+    console.log(raw)
+    for(let key of keyboard[line]){
+        const button = document.createElement('div');
+        button.className = `button ${key.color}`;
+        button.textContent = key.char;
+        raw.append(button);
+    }
+    keyboardWrap.append(raw)
 }
-document.head.innerHTML = variables.title;
+wrap.append(keyboardWrap)
+
+document.title = variables.title;
 document.body.append(wrap);

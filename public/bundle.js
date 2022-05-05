@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://RSS-Virtual-Keyboard/./src/index.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n    <title>Document</title>\\n</head>\\n<body>\\n    <p></p>\\n</body>\\n</html>\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://RSS-Virtual-Keyboard/./src/index.html?");
 
 /***/ }),
 
@@ -30,13 +30,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/variables.js":
+/*!*************************************!*\
+  !*** ./src/components/variables.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"keyboard\": () => (/* binding */ keyboard)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    title: \"<title>RSS Virtual Keyboard</title>\",\n    classDark: \"dark\",\n    classLight: \"light\",\n});\nconst keyboard = {\n    line_1: [\n        {char: \"\\`\", alt: \"~\"},\n        {char: \"1\", alt: \"!\"},\n        {char: \"2\", alt: \"@\"}\n    ]\n} \n\n//# sourceURL=webpack://RSS-Virtual-Keyboard/./src/components/variables.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/index.html\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\r\n\r\n\r\nlet p = document.createElement('p').innerText = \"Test\";\r\ndocument.body.append(p);\n\n//# sourceURL=webpack://RSS-Virtual-Keyboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/index.html\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _components_variables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/variables */ \"./src/components/variables.js\");\n\n\n\n\nconst wrap = document.createElement('div');\nconst button = document.createElement('div');\nwrap.className = 'wrap';\nbutton.className = 'button';\nfor(let item of _components_variables__WEBPACK_IMPORTED_MODULE_2__.keyboard.line_1) {\n    let btn = button.innerText = item.char\n    wrap.append(btn)\n}\ndocument.head.innerHTML = _components_variables__WEBPACK_IMPORTED_MODULE_2__[\"default\"].title;\ndocument.body.append(wrap);\n\n\n//# sourceURL=webpack://RSS-Virtual-Keyboard/./src/index.js?");
 
 /***/ })
 

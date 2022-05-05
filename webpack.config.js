@@ -33,12 +33,12 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            filename: "index.html"
+            filename: "./index.html",
         })
     ],
     devServer: {
         static: {
-          directory: path.join(__dirname, 'public'),
+          directory: path.join(__dirname, '/public'),
         },
         compress: true,
         port: 9000,

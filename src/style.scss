@@ -1,0 +1,38 @@
+$color-dart: #1c232e;
+$color-light: #3a424e;
+$btn-size: 50px;
+$btn-text-color: #fff;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1280px;
+    margin: 0 auto;
+}
+.raw{
+    display: flex;
+    margin: 10px 0;
+}
+.button{
+    position: relative;
+    min-width: $btn-size;
+    height: $btn-size;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: $btn-size;
+    color: $btn-text-color;
+    border-radius: 3px;
+    margin-right: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.dark{
+    background-color: $color-dart
+}
+.light{
+    background-color: $color-light
+}
