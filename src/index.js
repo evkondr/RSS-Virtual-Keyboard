@@ -17,7 +17,23 @@ for(let line in keyboard){
     for(let key of keyboard[line]){
         const button = document.createElement('div');
         button.className = `button ${key.color}`;
-        button.textContent = key.char;
+        button.innerHTML = key.char;
+        if(key.type) {
+            switch (key.type) {
+                case 'arrow':
+                    button.style.flexGrow = 0;
+                    break;
+                case 'spacebar':
+                    button.style.width = '50%';
+                    break;
+                case 'right_shift':
+                    button.style.flexGrow = 0;
+                    button.style.padding = 0;
+                    break;
+                default:
+                    break;
+            }   
+        }
         raw.append(button);
     }
     keyboardWrap.append(raw)
