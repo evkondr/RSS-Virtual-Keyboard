@@ -1,5 +1,6 @@
 $color-dart: #1c232e;
 $color-light: #3a424e;
+$color-active: dodgerblue;
 $btn-size: 50px;
 $btn-text-color: #fff;
 *{
@@ -31,11 +32,17 @@ body{
     border-radius: 3px;
     margin-right: 5px;
     cursor: pointer;
+    background-color: $color-dart;
+    flex-grow: 1;
     &:last-child{
         margin-right: 0;
     }
-    background-color: $color-dart;
-    flex-grow: 1;
+    &:active{
+        background-color: $color-active;
+    }
+}
+.active{
+    background-color: $color-active!important;
 }
 .light{
     background-color: $color-light

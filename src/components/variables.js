@@ -1,6 +1,6 @@
 export default {
   title: 'RSS Virtual Keyboard',
-  upperCase: true,
+  upperCase: false,
 };
 export const keyboard = {
   line_1: [
@@ -39,7 +39,7 @@ export const keyboard = {
     { char: 'DEL', color: 'dark' },
   ],
   line_3: [
-    { char: 'Caps Lock', color: 'dark' },
+    { char: 'CapsLock', color: 'dark', type: 'CapsLock' },
     { char: 'A', color: 'light', alt: 'a' },
     { char: 'S', color: 'light', alt: 's' },
     { char: 'D', color: 'light', alt: 'd' },
@@ -51,7 +51,7 @@ export const keyboard = {
     { char: 'L', color: 'light', alt: 'l' },
     { char: ';', color: 'light', alt: ':' },
     { char: '\'', color: 'light', alt: '\'' },
-    { char: 'ENTER', color: 'dark' },
+    { char: 'Enter', color: 'dark' },
   ],
   line_4: [
     { char: 'Shift', color: 'dark' },
@@ -67,15 +67,15 @@ export const keyboard = {
     { char: '.', color: 'light', alt: '>' },
     { char: '/', color: 'light', alt: '?' },
     { char: '&uarr;', color: 'dark', type: 'arrow' },
-    { char: 'Shift', color: 'dark', type: 'right_shift' },
+    { char: 'RightShift', color: 'dark', type: 'right_shift' },
   ],
   line_5: [
-    { char: 'Ctrl', color: 'dark' },
+    { char: 'Control', color: 'dark', type: 'Control' },
     { char: 'Win', color: 'dark' },
     { char: 'Alt', color: 'dark' },
-    { char: ' ', color: 'light', type: 'spacebar' },
+    { char: 'Space', color: 'light' },
     { char: 'Alt', color: 'dark' },
-    { char: 'Ctrl', color: 'dark' },
+    { char: 'Control', color: 'dark', type: 'Control' },
     { char: '&larr;', color: 'dark', type: 'arrow' },
     { char: '&darr;', color: 'dark', type: 'arrow' },
     { char: '&rarr;', color: 'dark', type: 'arrow' },
